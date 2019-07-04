@@ -1,0 +1,12 @@
+<%= form_with scope: :city, url: cities_path, local: true do |form| %>
+<p>
+  <%= form.label :url %><br>
+  <%= form.text_field :url %>
+</p>
+<p>
+  <%= form.submit %>
+</p>
+
+<% end %>
+
+<%= link_to 'Back', cities_path %>
